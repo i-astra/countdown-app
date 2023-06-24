@@ -54,6 +54,7 @@ body {
     align-items: center;
     /* width: 60%; */
     height: auto;
+    position: relative;
 }
 
 .main_break-options {
@@ -99,6 +100,7 @@ body {
 
     padding: 1rem 2.5rem;
     background-color: var(--main-color);
+    cursor: pointer;
 }
 
 .main_quick-controls .controls_reset-timer {
@@ -106,12 +108,42 @@ body {
     font-size: 2rem;
     background: transparent;
     color: var(--main-color);
+    cursor: pointer;
 }
 
 .main_quick-controls .controls_settings {
     padding: 1rem;
     font-size: 2rem;
     background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
     color: var(--main-color);
 
+}
+.controls_settings-modal{
+    height: 25rem ;
+    width: 20rem;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 0rem;
+    right: -10%;
+    border-radius: 10%;
+    padding: 1rem;
+    display:none;
+    /* position: relative; */
+}
+.modal_close{
+    height: 2rem;
+    width: 2rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: var(--main-bg-color);
+    border-radius:50% ;
+    top: 1rem;
+    right:1rem;
+    color: var(--main-color);
+    cursor: pointer;
 }
